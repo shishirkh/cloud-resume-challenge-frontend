@@ -34,6 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+      - name: see files
+        run: ls -alsh
+        
       - name: Copy a folder to s3
         uses: prewk/s3-cp-action@v2
         with:
